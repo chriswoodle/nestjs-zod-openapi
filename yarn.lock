@@ -6,8 +6,8 @@ __metadata:
   cacheKey: 10c0
 
 "@anatine/zod-nestjs@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "@anatine/zod-nestjs@npm:2.0.3"
+  version: 2.0.9
+  resolution: "@anatine/zod-nestjs@npm:2.0.9"
   dependencies:
     ts-deepmerge: "npm:^6.1.0"
   peerDependencies:
@@ -16,11 +16,11 @@ __metadata:
     "@nestjs/swagger": ^6.0.0 || ^7.0.0
     openapi3-ts: ^4.1.2
     zod: ^3.20.0
-  checksum: 00af10d1265a72b06b7b84ad2e1944daf5617a53883923d92f3b44ed017456215d12146afb436ba1704ba1312261d4af636c065a39712c1c64b98d5eb4151d2d
+  checksum: 4115cfb687f12b2dab35b73c52512d9eb675e4fba9505afc75bbe5e8cbd5dbb4f71ca9c4dec1172c6493e3601f4edf1bf3f560329a1e9331e002cdb06fc3fe5b
   languageName: node
   linkType: hard
 
-"@anatine/zod-openapi@npm:^2.2.1":
+"@anatine/zod-openapi@npm:2.2.1":
   version: 2.2.1
   resolution: "@anatine/zod-openapi@npm:2.2.1"
   dependencies:
@@ -573,6 +573,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@microsoft/tsdoc@npm:^0.15.0":
+  version: 0.15.1
+  resolution: "@microsoft/tsdoc@npm:0.15.1"
+  checksum: 09948691fac56c45a0d1920de478d66a30371a325bd81addc92eea5654d95106ce173c440fea1a1bd5bb95b3a544b6d4def7bb0b5a846c05d043575d8369a20c
+  languageName: node
+  linkType: hard
+
 "@nestjs/cli@npm:^11.0.0-next.4":
   version: 11.0.0-next.6
   resolution: "@nestjs/cli@npm:11.0.0-next.6"
@@ -659,20 +666,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/mapped-types@npm:2.0.2":
-  version: 2.0.2
-  resolution: "@nestjs/mapped-types@npm:2.0.2"
+"@nestjs/mapped-types@npm:2.0.6":
+  version: 2.0.6
+  resolution: "@nestjs/mapped-types@npm:2.0.6"
   peerDependencies:
     "@nestjs/common": ^8.0.0 || ^9.0.0 || ^10.0.0
     class-transformer: ^0.4.0 || ^0.5.0
     class-validator: ^0.13.0 || ^0.14.0
-    reflect-metadata: ^0.1.12
+    reflect-metadata: ^0.1.12 || ^0.2.0
   peerDependenciesMeta:
     class-transformer:
       optional: true
     class-validator:
       optional: true
-  checksum: 9a6d4c32242926aebc267d5a4a0b50f8aa8eeea8797e25aa9fb762637a45879c1ec103a9a0a30d24e8a6e3f75d0f4640208aaf4f9003e350b52f7e4acb07bab9
+  checksum: c04ba9518d75c76ac6d00faa7a701d111b20bd220706bdef99777a4678f3423fa259ff5cc2968967a54bb58a08a85a7be6a781bfa07ddfb26304f82ee63c628b
   languageName: node
   linkType: hard
 
@@ -707,22 +714,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/swagger@npm:^7.1.14":
-  version: 7.1.14
-  resolution: "@nestjs/swagger@npm:7.1.14"
+"@nestjs/swagger@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@nestjs/swagger@npm:8.1.0"
   dependencies:
-    "@nestjs/mapped-types": "npm:2.0.2"
+    "@microsoft/tsdoc": "npm:^0.15.0"
+    "@nestjs/mapped-types": "npm:2.0.6"
     js-yaml: "npm:4.1.0"
     lodash: "npm:4.17.21"
-    path-to-regexp: "npm:3.2.0"
-    swagger-ui-dist: "npm:5.9.0"
+    path-to-regexp: "npm:3.3.0"
+    swagger-ui-dist: "npm:5.18.2"
   peerDependencies:
-    "@fastify/static": ^6.0.0
+    "@fastify/static": ^6.0.0 || ^7.0.0
     "@nestjs/common": ^9.0.0 || ^10.0.0
     "@nestjs/core": ^9.0.0 || ^10.0.0
     class-transformer: "*"
     class-validator: "*"
-    reflect-metadata: ^0.1.12
+    reflect-metadata: ^0.1.12 || ^0.2.0
   peerDependenciesMeta:
     "@fastify/static":
       optional: true
@@ -730,7 +738,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: cb89a72b143f315d3cc102cf3b6f2d0655fd16aad6ea8bfedd43632e1170bcfb668746623e8c6185b804720ea061557feec0a234a1ecce77cb8574713644c48a
+  checksum: 67cdf2fe3608d3145e03a861e4c1a685d36617b9daa2e79949250b348756d07fd4b765bebc36fe55748c3abeabf21846dcd99c13c88833e4aaea22e81c772329
   languageName: node
   linkType: hard
 
@@ -792,6 +800,13 @@ __metadata:
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
   checksum: 5bd7576bb1b38a47a7fc7b51ac9f38748e772beebc56200450c4a817d712232b8f1d3ef70532c80840243c657d491cf6a6be1e3a214cff907645819fdc34aadd
+  languageName: node
+  linkType: hard
+
+"@scarf/scarf@npm:=1.4.0":
+  version: 1.4.0
+  resolution: "@scarf/scarf@npm:1.4.0"
+  checksum: 332118bb488e7a70eaad068fb1a33f016d30442fb0498b37a80cb425c1e741853a5de1a04dce03526ed6265481ecf744aa6e13f072178d19e6b94b19f623ae1c
   languageName: node
   linkType: hard
 
@@ -1365,12 +1380,12 @@ __metadata:
   resolution: "app@workspace:."
   dependencies:
     "@anatine/zod-nestjs": "npm:^2.0.3"
-    "@anatine/zod-openapi": "npm:^2.2.1"
+    "@anatine/zod-openapi": "npm:2.2.1"
     "@nestjs/cli": "npm:^11.0.0-next.4"
     "@nestjs/common": "npm:^11.0.0-next.4"
     "@nestjs/core": "npm:^11.0.0-next.4"
     "@nestjs/platform-express": "npm:^11.0.0-next.4"
-    "@nestjs/swagger": "npm:^7.1.14"
+    "@nestjs/swagger": "npm:^8.1.0"
     "@nestjs/testing": "npm:^11.0.0-next.4"
     "@types/express": "npm:^4.17.3"
     "@types/node": "npm:^18.0.0"
@@ -3528,10 +3543,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-to-regexp@npm:3.2.0":
-  version: 3.2.0
-  resolution: "path-to-regexp@npm:3.2.0"
-  checksum: 2eeb1c698293acf6f89fe5af33b4c20822b3cee3e4e910c43bbee098c8dde34232fc194d5c2bc02df72affada446a181784e24f7a46932af323706be029ed1ba
+"path-to-regexp@npm:3.3.0":
+  version: 3.3.0
+  resolution: "path-to-regexp@npm:3.3.0"
+  checksum: ffa0ebe7088d38d435a8d08b0fe6e8c93ceb2a81a65d4dd1d9a538f52e09d5e3474ed5f553cb3b180d894b0caa10698a68737ab599fd1e56b4663d1a64c9f77b
   languageName: node
   linkType: hard
 
@@ -4137,10 +4152,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swagger-ui-dist@npm:5.9.0":
-  version: 5.9.0
-  resolution: "swagger-ui-dist@npm:5.9.0"
-  checksum: e01c78d48dc6aa27049e218ebf6d6f16663c742eba6933788620a1b1d07187df9d48c85d963a6528245fc4af6b8362e42e2475b2eacb25b89c13165e42ac1454
+"swagger-ui-dist@npm:5.18.2":
+  version: 5.18.2
+  resolution: "swagger-ui-dist@npm:5.18.2"
+  dependencies:
+    "@scarf/scarf": "npm:=1.4.0"
+  checksum: 254f0d0b14766d505e69c36ea656afe838c32eefe1317aa4a8a2ffae06f1e53c55333130c6cea2f57bb47825b0cc465436f3f7af41254bd24b0601e56f914dba
   languageName: node
   linkType: hard
 

@@ -16,11 +16,11 @@
     },
     "dependencies": {
         "@anatine/zod-nestjs": "^2.0.3",
-        "@anatine/zod-openapi": "^2.2.1",
+        "@anatine/zod-openapi": "2.2.1",
         "@nestjs/common": "^11.0.0-next.4",
         "@nestjs/core": "^11.0.0-next.4",
         "@nestjs/platform-express": "^11.0.0-next.4",
-        "@nestjs/swagger": "^7.1.14",
+        "@nestjs/swagger": "^8.1.0",
         "reflect-metadata": "^0.1.13",
         "rimraf": "^3.0.2",
         "rxjs": "^7.8.1",
